@@ -68,3 +68,6 @@ configs:
 networks:
   elk:
     driver: overlay
+
+volumes:
+  elasticsearch:
