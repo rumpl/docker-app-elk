@@ -18,6 +18,10 @@ services:
     deploy:
       mode: replicated
       replicas: 1
+    volumes:
+      - type: volume
+        source: elasticsearch
+        target: /usr/share/elasticsearch/data
 
   logstash:
     image: docker.elastic.co/logstash/logstash:7.4.0
